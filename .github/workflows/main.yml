@@ -32,13 +32,6 @@ jobs:
              -e QA.postman_environment.json
              -r cli,htmlextra
 
-      - name: Newman Report
-        if: always()
-        uses: actions/upload-artifact@v6.0.0
-        with:
-          name: Newman Reports
-          path: reoprts/*.html
-
       - name: Adding github page
         if: always()
         uses: peaceiris/actions-gh-pages@v4.0.0
