@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v6.0.0
         with:
           name: Newman Reports
-          path: newman/*.html
+          path: reoprts/*.html
 
       - name: Adding github page
         if: always()
